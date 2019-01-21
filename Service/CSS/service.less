@@ -1,0 +1,852 @@
+// 顶部导航
+.top-nav {
+    width: 100%;
+    height: 41px;
+    overflow: hidden;
+    line-height: 41px;
+    background-color: #fcfcfc;
+    position: relative;
+    .you {
+        position: absolute;
+        left: 1076px;
+        top: 11px;
+        border: 1px solid #918f91;
+        width: 95px;
+        height: 20px;
+        line-height: 20px;
+        color: #918f91;
+        font-size: 13px;
+        box-sizing: border-box;
+        padding-left: 5px; 
+    }
+    // logo区域
+    .logo {
+        float: left;
+        margin-left: 204px;
+        margin-top: 2px;
+        img {
+            width: 150px;
+            height: 37px;
+        } 
+    }
+
+    // 中间部分
+    .xiao {
+        float: left;
+        img {
+            width: 500px;
+            height: 37px;
+        }
+    }
+
+    // 左侧导航
+    .l-nav {
+        ul {
+            margin-left: 876px;
+        }
+        li a {
+            font-size: 13px;
+            color: #918f91;
+        }
+    
+        li:nth-child(even) {
+            border-right: 1px solid #918f91;
+            height: 13px;
+            margin: 14px 7px 0 7px;
+            box-sizing: border-box;
+        }
+    }
+
+    .span1 {
+        span {
+            position: absolute;
+            left: 1155px;
+            top: -3px;
+        }
+    }
+}
+
+
+
+// 背景图
+.bgimg {
+    width: 100%;
+    position: relative;
+    height: 465px;
+    background: url(../img/common_192_background.jpg) no-repeat -285px 0;
+    .wanmei_gg_big {
+        position: absolute;
+        left: 200px;
+        top: 0;
+        display: none;
+    }
+    .youxi {
+        position: absolute;
+        left: 300px;
+        top: 0;
+        display: none;
+        z-index: 6;
+    }
+    .youxi:hover {
+        cursor: pointer;
+    }
+
+    .main_nav {
+        position: absolute;
+        left: 44px;
+        top: 198px;
+    }
+
+    // 主体导航
+    .main-nav {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background-color: #1e1e1e;
+        position: relative;
+        li {
+            width: 110px;
+            text-align: center;
+            a {
+                width: 100%;
+                display: block;
+                color: #999999;
+                font-size: 18px;
+                font-family: "宋体"
+            }
+
+            .lun {
+                color: #ffffff;
+            }
+
+        }
+        li:nth-child(1) {
+            background-color: #d4242e;
+        }
+
+        a:hover {
+            background-color: #d4242e;
+            color: #ffffff;
+        }
+    }
+    .search {
+        position: relative;
+        input {
+            width: 266px;
+            height: 32px;
+            box-sizing: border-box;
+            padding-left: 10px;
+            border: 1px solid #262626;
+            border-radius: 30px;
+            background-color: #262626;
+            color: #757575;
+            position: absolute;
+            left: 915px;
+            top: -46px;
+        }
+        // 搜索框处帖子处的下拉列表
+        ul{
+            position: absolute;
+            left: 1085px;
+            bottom: -86px;;
+            z-index: 6;
+            display: none;
+            .tiezi:nth-child(3) {
+                border-bottom: 2px solid #ffba00;
+            }
+            .tiezi {
+                background-color: #f8f8f8;
+                width: 60px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                border-bottom: 1px dashed #ccc;
+                a {
+                    color: #626698;
+                    font-size: 12px;
+                }
+                a:hover {
+                    background-color: #f8f8f8;
+                    color: red;
+                }
+            }
+            .tiezi:hover {
+                border-bottom: none;
+            }
+        }
+        span {
+            position: absolute;
+            left: 1100px;
+            top: -60px;
+            color: #757575;
+            font-size: 14px;
+        }
+        .down {
+            position: absolute;
+            left: 1130px;
+            top: -33px;
+            width: 15px;
+            height: 8px;
+        }
+        .fang {
+            position: absolute;
+            left: 1150px;
+            top: -43px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .menu {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+    }
+    // 主题导航中最右侧按钮中的子菜单
+    .menu2 {
+        position: absolute;
+        z-index: 8;
+        left: 1048px;
+        top: 59px;
+        width: 210px;
+        height: 220px;
+        text-align: center;
+        background-color: #fafbfd;
+        border: 1px solid #d5d9de;
+        border-bottom: 2px solid #ffba00;
+        box-shadow: 0 3px 5px rgba(0,0,0,.3);
+        display: none;
+        p {
+            color: #757575;
+            font-size: 13px;
+            a {
+                color: #ffba00;
+            }
+            a:hover {
+                background-color: #fff;
+                color: black;
+                border-bottom: none;
+            }
+        }
+        p:nth-child(2) {
+            margin-top: -30px;
+        }
+
+    } 
+}
+
+// 论坛开始
+.l-start {
+    width: 1260px;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 auto;
+    position: absolute;
+    left: 44px;
+    top: 258px;
+
+    a {
+        color: #62666d;
+        font-size: 14px;
+    }
+
+    .l-left {
+        
+        a:nth-child(1) {
+            margin-top: 2px;
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    .l-right {
+        img {
+            width: 14px;
+            height: 14px;
+        }
+        margin-bottom: 15px;
+    }
+}
+
+// 论坛开始下的图片展示
+.show {
+    width: 100%;
+    .l-show {
+        width: 1258px;
+        height: 136px;
+        border: 1px solid #eaeaea;
+        border-top: 5px solid #eaeaea;
+        position: absolute;
+        left: 44px;
+        top: 305px;
+        img {
+            width: 126px;
+            height: 74px;
+            margin: 29px 29px 33px 31px;
+        }
+
+        .d {
+            margin-top: 24px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+        }
+        .d:hover {
+            color: skyblue;
+            border-bottom: 1px solid skyblue;
+        }
+
+        span {
+            margin-top: 48px;
+            margin-left: -62px;
+            font-size: 10px;
+            color: #9fa4ac;
+        }
+    }
+}
+
+// 子版块
+.son {
+    width: 100%;
+    .z-title {
+        height: 43px;
+        border-top: 1px solid #ccc;
+        padding: 0 18px 0 18px;
+        background: #eaeaea;
+
+        .collapsed_yes {
+            display: none;
+        }
+
+        .subforum_squicon {
+            margin-top: 15px;
+        }
+
+        span {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        img {
+            margin-top: 15px;
+        }
+    } 
+
+    .content {
+        margin-top: 20px;
+        border: 1px solid #eaeaea;
+        padding: 0 0 25px 19px;
+        box-sizing: border-box;
+        height: 336px;
+        display: block;
+
+        .top {
+            display: flex;
+            height: 168px;
+            border-bottom: 1px dashed #eaeaea;
+            li {
+                margin-top: 32px;
+                flex: 1;
+                img {
+                    border-radius: 15px;
+                }
+                div {
+                    margin-left: 15px;
+                    a:nth-child(1) {
+                       color: #62666D;
+                       font-size: 16px;
+                       font-weight: 700;
+                       span {
+                           color: #d4242e;
+                           font-size: 14px;
+                           font-family: "宋体";
+                           margin-left: 5px;
+                       }
+                    }
+
+                    div {
+                        color: #5e95da;
+                        font-size: 11px;
+                        margin-left: -1px;
+                    }
+
+                    a:nth-child(3) {
+                        color: #9FA4AC;
+                        font-size: 13px;
+                    }
+                    a:nth-child(4) {
+                        display: block;
+                        color: #9FA4AC;
+                        font-size: 13px;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+// 第一个发帖部分
+.first-fa {
+    width: 100%;
+    // 按钮发帖部分
+    .btn {
+        width: 100%;
+        height: 73px;
+        box-sizing: border-box;
+        padding-top: 17px;
+        .a {
+            display: block;
+            background-color: #5e95da;
+            color: #fff;
+            width: 120px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+        }
+        .l-return1 {
+            position: relative;
+            a {
+                color: #666666;
+            }
+            // 第一个发帖部分返回按钮处子菜单
+            ul {
+                position: absolute;
+                right: 0;
+                top: 37px;
+                border: 1px solid #ccc;
+                display: none;
+                li {
+                    width: 90px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    background-color: #f8f8f8;
+                    border-bottom: 1px dashed #ccc;
+                    a {
+                        font-size: 13px;
+                    }
+                    a:hover {
+                        background-color: #f8f8f8;
+                        color: red;
+                        border-bottom: none;
+                    }
+                }
+                li:nth-child(2) {
+                    border-bottom: 2px solid #ffba00;
+                }
+            }
+
+            .fan1:hover {
+                display: block;
+                background-color: #5e95da;
+                color: #fff;
+                width: 80px;
+                height: 36px;
+                border-radius: 30px;
+                text-align: center;
+                line-height: 36px;
+            }
+            span {
+                margin-right: 10px;
+                font-family: "宋体";
+                font-weight: 700;
+                color: #cfd1d5;
+            }
+        }
+    }
+    // 下面的内容盒子
+    .first-cot {
+        width: 100%;
+        height: 153px;
+        border: 1px solid #eaeaea;
+        box-sizing: border-box;
+        padding: 28px 20px 0 20px;
+        // 内容盒子的上盒子
+        .top-b {
+            border-bottom: 1px solid #dcdcde;
+            height: 34px;
+            .l-hui {
+                li:nth-child(1) {
+                    margin-left: 10px;
+                    margin-right: 45px;
+                    .a {
+                        color: #626698;
+                        font-weight: 700;
+                    }
+                }
+                li:nth-child(2n+3) {
+                    color: #d7cfcc;
+                    margin: 0 10px;
+                }
+                li {
+                    a {
+                        color: #62666d;
+                    }
+                }
+                li:nth-child(2) {
+                    ul {
+                        position: absolute;
+                        width: 75px;
+                        // right: 0;
+                        // top: 37px;
+                        border: 1px solid #ccc;
+                        display: none;
+                        li {
+                            margin: 0;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            background-color: #f8f8f8;
+                            border-bottom: 1px dashed #ccc;
+                            a {
+                                font-size: 13px;
+                            }
+                            a:hover {
+                                background-color: #f8f8f8;
+                                color: red;
+                                border-bottom: none;
+                            }
+                        }
+                        li:nth-child(2) {
+                            border-bottom: 2px solid #ffba00;
+                        }
+                    }
+                }
+                li:nth-child(4) {
+                    ul {
+                        position: absolute;
+                        width: 65px;
+                        // right: 0;
+                        // top: 37px;
+                        border: 1px solid #ccc;
+                        display: none;
+                        li {
+                            margin: 0;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            background-color: #f8f8f8;
+                            border-bottom: 1px dashed #ccc;
+                            a {
+                                font-size: 13px;
+                            }
+                            a:hover {
+                                background-color: #f8f8f8;
+                                color: red;
+                                border-bottom: none;
+                            }
+                        }
+                        li:nth-child(6) {
+                            border-bottom: 2px solid #ffba00;
+                        }
+                    }
+                }
+                li:nth-child(6) {
+                    ul {
+                        position: absolute;
+                        width: 75px;
+                        // right: 0;
+                        // top: 37px;
+                        border: 1px solid #ccc;
+                        display: none;
+                        li {
+                            margin: 0;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            background-color: #f8f8f8;
+                            border-bottom: 1px dashed #ccc;
+                            a {
+                                font-size: 13px;
+                            }
+                            a:hover {
+                                background-color: #f8f8f8;
+                                color: red;
+                                border-bottom: none;
+                            }
+                        }
+                        li:nth-child(6) {
+                            border-bottom: 2px solid #ffba00;
+                        }
+                    }
+                }
+                li:last-child {
+                    div {
+                        width: 236px;
+                        height: 36px;
+                        border: 1px solid #ff6600;
+                        background-color: #ff6600;
+                        border-radius: 8px;
+                        color: #fff;
+                        font-size: 12px;
+                        text-align: center;
+                        line-height: 36px;
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        display: none;
+                    }
+                }
+            }
+
+            .r-xin {
+                margin-right: 63px;
+                li {
+                    margin: 0 20px;
+                    a {
+                        color: #9fa4ac;
+                    }
+                }
+                li:nth-child(1) {
+                    font-family: "宋体";
+                }
+            }
+        }
+        // 内容盒子的下盒子
+        .bot-b {
+            padding: 31px 0 0 10px;
+            span {
+                color: #62666d;
+                font-size: 12px;
+                font-family: "宋体";
+            }
+        }
+    }
+}
+
+// 第二个发帖部分
+.second-fa {
+    // 按钮发帖部分
+    .btn {
+        width: 100%;
+        height: 73px;
+        box-sizing: border-box;
+        padding-top: 17px;
+        position: relative;
+        .a {
+            display: block;
+            background-color: #5e95da;
+            color: #fff;
+            width: 120px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+        }
+        .l-return2 {
+            a {
+                color: #666666;
+            }
+            // 第二个发帖部分返回按钮处子菜单
+            ul {
+                position: absolute;
+                right: 0;
+                top: -58px;
+                border: 1px solid #ccc;
+                display: none;
+                li {
+                    width: 90px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    background-color: #f8f8f8;
+                    border-bottom: 1px dashed #ccc;
+                    a {
+                        font-size: 13px;
+                    }
+                    a:hover {
+                        background-color: #f8f8f8;
+                        color: red;
+                        border-bottom: none;
+                    }
+                }
+                li:nth-child(2) {
+                    border-bottom: 2px solid #ffba00;
+                }
+            }
+
+            .fan2:hover {
+                display: block;
+                background-color: #5e95da;
+                color: #fff;
+                width: 80px;
+                height: 36px;
+                border-radius: 30px;
+                text-align: center;
+                line-height: 36px;
+            }
+            span {
+                margin-right: 10px;
+                font-family: "宋体";
+                font-weight: 700;
+                color: #cfd1d5;
+            }
+        }
+    }
+    // 快速发帖部分
+    .quick {
+        background-color: #eaeaea;
+        height: 43px;
+        border-top: 1px solid #cccccc;
+        line-height: 43px;
+        span {
+            margin-left: 44px;
+            color: #666666;
+            font-size: 16px;
+        }
+    }
+    // 快速发帖内容区域
+    .q-content {
+        background-color: #fafbfd;
+        // height: 312px;
+        .top-box {
+            font-size: 14px;
+            color: #62666d;
+            input {
+                width: 304px;
+                height: 28px;
+                border: 1px solid #62666D;
+                padding: 10px;
+                border-radius: 8px;
+                box-sizing: border-box;
+                margin:30px 19px 10px 25px;  
+            } 
+            span {
+                font-weight: 700;
+                margin: 0 3px;
+            }
+        }
+
+        .bot-box {
+            .controls {
+                img {
+                    margin-left: 25px;
+                }
+                textarea {
+                    width: 1036px;
+                    height: 152px;
+                    margin-left: 25px;
+                    padding: 10px 0 0 15px;
+                    font-size: 16px;
+                    border-radius: 15px;
+                }
+
+                div {
+                    margin-left: 900px;
+                    button {
+                        background-color: #5e95da;
+                        color: #fff;
+                        width: 120px;
+                        height: 36px;
+                        text-align: center;
+                        line-height: 36px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .contentList {
+                margin-top: 50px;
+
+                img {
+                    width: 80px;
+                    border-radius: 50%;
+                }
+
+                li {
+                    padding: 20px;
+                    border-bottom: 1px dashed #ccc;
+                    .info {
+                        position: relative;
+                        span {
+                            position: absolute;
+                            top: 15px;
+                            left: 100px;
+                            font: bold 16px '宋体';
+                        }
+                        p {
+                            position: absolute;
+                            top: 40px;
+                            left: 100px;
+                            color: #aaa;
+                            font-size: 12px;
+                        }
+                    }
+                    .content {
+                        position: absolute;
+                        padding-left: 100px;
+                        color: #666;
+                        word-break: break-all;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+// 底部区域
+.footer {
+    width: 100%;
+    height: 265px;
+    background-color: #f2f2f2;
+    .one-box {
+        height: 135px;
+        box-sizing: border-box;
+        padding: 36px 51px 0 70px;
+        border-bottom: 1px solid #e6e6e6;
+        li {
+            font-size: 12px;
+            color: #9FA4AC;
+        }
+    }
+    .two-box {
+        height: 28px;
+        line-height: 28px;
+        border-bottom: 1px solid #e6e6e6;
+        ul {
+            width: 465px;
+            margin: 0 auto;
+            text-align: center;
+            li:nth-child(even) {
+                border-right: 1px solid #9FA4AC;
+                height: 14px;
+                margin: 7px 10px 0 10px;
+            }
+            li:nth-child(odd) {
+                a {
+                    color: #9FA4AC;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .three-box {
+        width: 100%;
+        ul {
+            width: 830px;
+            margin: 0 auto;
+            text-align: center;
+            li {
+                color: #9FA4AC;
+                font-size: 12px;
+                margin: 10px 0;
+            }
+            li:nth-child(3) {
+                img:nth-child(1) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    
+}
+
+// 回到顶部
+.return1 {
+    position: fixed;
+    right: 15px;
+    top: 480px;
+    display: none;
+}
